@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 04</title>
+    <link rel="img" href="img/goku.jpg">
+</head>
+
+<body>
+    <!-- Arquitectura cliente servidor
+    Arquitectura la forma en que estan estructurados los componentes de un sistema.
+
+    Cliente: el dispositivo que solicita la pagina web
+
+    Servidor: es el hardware y software que almacena y entrega informacion
+    -->
+
+    <h1>Hola Mundo</h1>
+
+    <!-- Enlaces
+    Se crean con la etiqueta a ( anchor ) y necesita el atributo obligatorio href
+    target="_black" pestana nueva
+    rel="nofollw" no le da a trasmitir el SEO
+    rel="noreference" ( no indica al destino el origen del link)
+    rel="noopener" (evita la incrustacion de codigo malicioso al abrir enlaces en nuevas pestanas)
+    download ( descarga el resurso en lugar de abrirlo en el navegador)
+-->
+    <a href="https://ed.team/">Ir a EDteam</a>
+    <!-- Atributo opcionales-->
+    <p>
+        <a href="https://ed.team" target="_blank" rel="nofollw">Ir a EDteam en pestana nueva</a>
+    </p>
+    <p>
+        <a href="img/goku.jpg"> ver Imagenes de goku</a>
+        <br>
+        <a href="img/goku.jpg" download>
+            descargar Imagenes de goku</a>
+    </p>
+
+    <!-- Rutas relativas y absolutas
+        1. Rutas absolutas
+        Tienen URL ( http o https )  Rutas Unicas
+        * Se usan para rutas exteras
+
+        2. Rutas relativas
+        * Se usan para rutas internas del proyecto
+        * Se debe navgar hacia el destino 
+            * En la misma carpeta    goku.jpg
+        * Si esta en la carpeta encim   ../goku.jpg
+        * Si esta abajo de una carpeta  img/goku.jpg
+
+        3. Rutas relativas a la raiz
+        * Se contruyen a partir de la carpeta de la raiz del proyecto
+        / = home
+    -->
+
+    <p>Ir a<a href="marcadores.html"> marcadores</a> </p>
+
+    <!-- Listas -->
+    <p><a href="listas.html">Ir a las listas</a></p>
+</body>
+
+</html>

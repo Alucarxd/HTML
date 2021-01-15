@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <!-- Tablas 
+        <table></table> tabla
+    <tr></tr> table row ( para cada fila)
+    <td></td> table data para cada celda
+    <th></th> son celdas de cabezeras
+    dentro de <thead></thead> va <th></th>
+    <tbody></tbody> enciera todo el contenido de <table></table>
+
+    <capiton></caption> es el titulo de las tablas
+
+        Atributos para agrupacion de filas y columnas
+        colspan=N
+        rowspan=N   la n es una valor que le damos puede variar
+
+    -->
+    <h2>Extructura basica de una tabla </h2>
+
+    <table>
+        <caption>Horarios de clases de Gabriel Garcia</caption>
+        <colgroup>
+        <col colspan="2" style="background-color: blue;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">HTML</td>
+                <td>JAVASCRIP</td>
+                <td rowspan="2">PYTHON</td>
+            </tr>
+            <tr>
+                <td>Python-Dj</td>
+                <td>JAVASCRIP-VUE</td>
+                <td>CEO</td>
+            </tr>
+        </tbody>
+        <!-- tfoot son para conculsiones-->
+        <tfoot>
+            <tr>
+                <td colspan="3">Total de cursos</td>
+                <td>2 Cursos</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
